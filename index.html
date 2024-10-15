@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/MatchWatch 16x16.png">
+    <link rel="shortcut icon" href="img/favicon-w.png" type="image/x-icon">
+    <title>MatchWatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <img src="img/Logo.png" class="img-01" >
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal con video -->
+    <section id="inicio" class="hero">
+        <video autoplay muted loop>
+            <source src="video/dofon.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+        <div class="hero-content">
+            <h1>Reviví tus mejores partidos con MatchWatch</h1>
+            <p>Una nueva forma de vivir el deporte.</p>
+            <a href="#caracteristicas" class="cta">Descubre más</a>
+        </div>
+    </section>
+
+    <!-- Sección de características -->
+    <section id="caracteristicas">
+        <h2>Características</h2>
+        <div class="caracteristica">
+            <h3>Grabación en vivo</h3>
+            <p>Revive cada momento de tu partido.</p>
+        </div>
+        <div class="caracteristica">
+            <h3>Compartí con tu equipo</h3>
+            <p>Comparte los videos con tus amigos y equipo.</p>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input placeholder="Ingrese su nombre" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input placeholder="Ingrese su mail"  type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea placeholder="Escriba aqui su mensaje" id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MatchWatch</p>
+    </footer>
+
+</body>
+</html>
