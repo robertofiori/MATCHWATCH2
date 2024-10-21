@@ -1,29 +1,36 @@
-/* Estilo General */
+/* Estilo General CSS del sitio */
 body {
-    margin: 0;
+    margin: 0; 
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #f1f1f1; /* Texto claro */
+    /*Elimina los márgenes y el espacio interno (padding) predeterminado del cuerpo de la página, para que todo comience desde los bordes.*/
+    font-family: 'Arial', sans-serif; 
+    /* Establece la fuente del texto en Arial, o una fuente genérica "sans-serif" si Arial no está disponible*/
+    background-color: #1a1a1a; 
+    /*  Aplica un color de fondo oscuro (gris oscuro) */
+    color: #f1f1f1; 
+    /*  Define el color del texto como un gris claro para contrastar con el fondo oscuro. */
 }
 
+/* IMAGEN logo MatchWatch en verde*/
 .img-01 {
     height: 50px;
-    padding-left: 45px;    
+    /*Define una altura de 50 píxeles para la imágen*/
+    padding-left: 45px;  
+    /*Añade un espacio de 45 píxeles a la izquierda para la imágen.*/  
 }
 
 /* Header */
 header {
     background-color: #0e0e0e;
+    /*Aplica un fondo negro al encabezado*/
     padding: 20px;
+    /*Añade 20 píxeles de espacio interno (padding) dentro del encabezado.*/
     display: flex;
+    /*Utiliza el modelo de diseño "flexbox" para organizar el contenido dentro del header.*/
     justify-content: space-between;
+    /*Coloca los elementos dentro del encabezado con el máximo espacio posible entre ellos */
     align-items: center;
-}
-
-header .logo {
-    color: #32cd32; /* Verde césped */
-    font-size: 1.5rem;
+    /*Alinea los elementos verticalmente en el centro*/
 }
 
 header ul {
