@@ -33,17 +33,25 @@ header {
     /*Alinea los elementos verticalmente en el centro*/
 }
 
+
 header ul {
     list-style: none;
+    /*Elimina los puntos predeterminados de la lista ul*/
     display: flex;
+    /*Elimina los puntos o viñetas predeterminados de la lista ul*/
     gap: 20px;
+    /*Añade 20 píxeles de espacio entre los elementos de la lista ul*/
 }
 
 header ul li a {
     color: #f1f1f1;
+    /*Los links del menú son de color gris claro*/
     text-decoration: none;
+    /*Elimina el subrayado predeterminado en los links*/
     padding: 10px;
+    /*Añade 10 píxeles de espacio alrededor de los link*/
     transition: color 0.3s ease;
+    /*Animacion de cambio de color, 0.3seg para  suave cuando el mouse pasa sobre el link*/
 }
 
 header ul li a:hover {
@@ -53,105 +61,163 @@ header ul li a:hover {
 /* Hero (Sección principal con video) */
 .hero {
     position: relative;
+    /*Posiciona los elementos hijos de la sección de forma relativa a este contenedor.*/
     height: 100vh;
+    /*Ocupa el 100% de la altura de la ventana del navegador*/
     display: flex;
+    /*Usa flexbox para centrar el contenido*/
     justify-content: center;
+    /* Centra los elementos horizontal y verticalmente.*/
     align-items: center;
+    /*Centra el texto*/
     text-align: center;
     color: #f1f1f1;
+    /*El texto es gris claro*/
+    
 }
 
 .hero video {
     position: absolute;
+    /*Posiciona el video detrás del contenido.*/
     top: 0;
     left: 0;
+    /*Coloca el video en la esquina superior izquierda*/
     width: 100%;
     height: 100%;
+    /*El video ocupa toda la pantalla*/
     object-fit: cover;
+    /*Hace que el video se ajuste sin perder la proporción*/
     z-index: -1;
-    opacity: 0.5; /* Para que el video no distraiga demasiado */
-}
+    /*Coloca el video detrás del texto*/
+    opacity: 0.5; /* Para que el video no distraiga demasiado se muestra con una transparencia del 50%*/
+    }
 
 .hero-content {
     z-index: 1;
 }
+/*el contenido textual de la sección esté visible y no quede detrás del video de fondo*/
 
 .cta {
     display: inline-block;
+    /* El botón se comporta como un bloque pero en línea*/
     background-color: #32cd32;
+    /*El fondo del botón es verde césped*/
     color: #000;
+    /*El texto del botón es negro*/
     padding: 15px 30px;
+    /*Añade 15 píxeles de espacio vertical y 30 píxeles horizontal.*/
     text-decoration: none;
+    /*Elimina cualquier decoracion existente*/
     border-radius: 5px;
+    /*Bordes redondeados*/
     transition: background-color 0.3s ease, transform 0.3s ease;
+    /*Suaviza el cambio de color y el efecto de transformación*/
 }
 
 .cta:hover {
-    background-color: #28a428; /* Efecto hover para un verde más oscuro */
+    background-color: #28a428; /* Efecto hover para un verde más oscuro, "hover" aplica estilos cuando el usuario pasa el mouse por encima de un elemento con la clase */
     transform: scale(1.05);
+    /*Agranda el botón un 5% cuando se hace hover, haciendo que parezca que "crece" ligeramente.*/
 }
+
 
 /* Sección de características */
 #caracteristicas {
+    /*Aplica los estilos a la sección de la página con el ID #caracteristicas*/
     padding: 50px;
+    /*Añade un espacio interno de 50 píxeles alrededor del contenido de la sección.*/
     background-color: #2e2e2e;
+    /*Define un color de fondo gris oscuro para toda la sección*/
 }
 
+/* Titulos h2 */
 #caracteristicas h2 {
+    /*Aplica estilos al título h2*/
     text-align: center;
+    /*Centra el texto del título*/
     margin-bottom: 40px;
+    /*Añade un margen inferior de 40 píxeles para crear espacio entre el título y el siguiente contenido.*/
 }
-
+ 
 .caracteristica {
+    /*Aplica estilos a los elementos con la clase "caracteristica"*/
     text-align: center;
+    /*Centra el texto*/
     margin-bottom: 20px;
+    /*Añade un margen inferior de 20 píxeles para separar cada bloque*/
 }
 
 /* Formulario de contacto */
 #contacto {
+    /*Aplica estilos a la sección con el ID #contacto */
     padding: 50px;
+    /*Añade un relleno interno de 50 píxeles alrededor del contenido en esta sección*/
     background-color: #1a1a1a;
+    /*Define un color de fondo negro (suave)*/
 }
 
 #contacto form {
+    /*Aplica estilos al formulario dentro de la sección #contacto*/
     display: flex;
+    /*Define el contenedor del formulario como un flexbox*/
     flex-direction: column;
+    /*Coloca los elementos del formulario en una columna (uno abajo del otro)*/
     gap: 15px;
+    /*Crea un espacio de 15 píxeles entre cada elemento del formulario*/
     max-width: 500px;
+    /*Limita el ancho del formulario a 500 píxeles*/
     margin: 0 auto;
+    /*Centra horizontalmente el form dentro de la sección, ajusta  márgenes automáticamente*/
 }
 
 #contacto input, #contacto textarea {
+    /*Aplica estilos a los campos de entrada a (<input>) y a (<textarea>) del formulario de contacto*/
     padding: 10px;
+    /*Añade relleno interno de 10 px para que no quede pegado a los bordes.*/
     border: 1px solid #ccc;
+    /*Establece un borde gris claro alrededor de los campos*/
     border-radius: 5px;
+    /*Redondea los bordes con un radio de 5 px*/
     background-color: #2e2e2e;
+    /*Define un color de fondo gris oscuro para los campos.*/
     color: #f1f1f1;
+    /*Color del texto dentro de los campos en blanco claro*/
 }
 
 #contacto button {
+    /*Estilos del botón de enviar */
     background-color: #32cd32;
+    /*Color de fondo verde brillante para el botón*/
     color: #000;
+    /*Color del texto en negr*/
     padding: 10px 20px;
+    /*Relleno de 10 px (arriba y abajo) y 20 px (izq y der).*/
     border: none;
+    /*Elimina bordes predeterminado del botón*/
     border-radius: 5px;
+    /*Redondea los bordes del botón en 5px*/
     cursor: pointer;
+    /*Animacion de cambio de cursor a una mano cuando el usuario pasa el mouse sobre el botón*/
     transition: background-color 0.3s ease;
+    /*Transición suave de 0.3 segundos cuando cambia el color de fondo*/
 }
 
 #contacto button:hover {
+    /*Aplica estilos al botón de contacto cuando el usuario pasa el mouse por encima*/
     background-color: #28a428;
+    /*Cambia el color de fondo del botón a un verde más oscuro al hacer hover*/
 }
 
-/* Footer */
+/* Footer/Pie de pagina */
 footer {
+    /*Aplica estilos al pie de página*/
     background-color: #0e0e0e;
+    /*Define un color de fondo negro oscuro*/
     text-align: center;
+    /*Centra el texto dentro del pie de página*/
     padding: 20px;
+    /*Añade un relleno de 20 px alrededor del contenido del pie de página.*/
     color: #f1f1f1;
+    /*Define el color del texto en blanco claro*/
 }
 
-/* Animaciones */
-html {
-    scroll-behavior: smooth;
-}

@@ -7,10 +7,11 @@
     <link rel="shortcut icon" href="img/favicon-w.png" type="image/x-icon">
     <title>MatchWatch</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
 
-    <!-- Header -->
+    
     <header>
         <nav>
             <img src="img/Logo.png" class="img-01" >
@@ -51,7 +52,10 @@
     <!-- Formulario de contacto -->
     <section id="contacto">
         <h2>Contáctanos</h2>
-        <form>
+        <form
+        action="https://formspree.io/f/mgveenwg"
+        method="POST"
+        >
             <label for="nombre">Nombre:</label>
             <input placeholder="Ingrese su nombre" id="nombre" name="nombre" required>
             
@@ -63,12 +67,72 @@
             
             <button type="submit">Enviar</button>
         </form>
+        
 
     </section>
 
     <footer>
         <p>&copy; 2024 MatchWatch</p>
     </footer>
+
+    /*El siguinete es un bloque de código es un "script en jQuery" que implementa un efecto de scroll suave cuando el usuario hace clic en un enlace ancla en la página*/
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+/*Fin del script - REFERENCIA - https://www.youtube.com/watch?v=Ec26iCMC-6E */
+
 
 </body>
 </html>
