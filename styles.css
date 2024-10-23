@@ -221,3 +221,20 @@ footer {
     /*Define el color del texto en blanco claro*/
 }
 
+/*REFERENCIA - https://www.youtube.com/watch?v=OeyPXzQfJrI*/
+.socials a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    min-height: 40px;
+    width: 40px;
+    background-color: #28a428;
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    }
+
+ .socials a:hover {
+    background-color: #f1f1f1;
+ }   
