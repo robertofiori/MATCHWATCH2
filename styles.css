@@ -121,6 +121,10 @@ header ul li a:hover {
 }
 
 
+.caracteristica {
+    align-items: center;
+}
+
 /* Sección de características */
 #caracteristicas {
     /*Aplica los estilos a la sección de la página con el ID #caracteristicas*/
@@ -208,7 +212,7 @@ header ul li a:hover {
     /*Cambia el color de fondo del botón a un verde más oscuro al hacer hover*/
 }
 
-/* Footer/Pie de pagina */
+/* Footer/Pie de pagina */  
 footer {
     /*Aplica estilos al pie de página*/
     background-color: #0e0e0e;
