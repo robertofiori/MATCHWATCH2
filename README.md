@@ -1,8 +1,8 @@
-<h1 align="center">Hola 👋, soy Roberto Fiori</h1>
+<h1 align="center">Hi 👋, I'm Roberto Fiori</h1>
 <h3 align="center">Web dedicada a administrar videos de canchas de F5/F8/Paddle/Tenis</h3>
 <h3 align="center">El sitio cumple con los standares de accesibilidad, Adaptativo/Responsivo e intuitivo</h3>
 
-<h3 align="left">Contactate conmigo :</h3>
+<h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/roberto-fiori-a8047a32/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/roberto-fiori-a8047a32/" height="30" width="40" /></a>
 <a href="https://fb.com/https://www.facebook.com/robertocfiori" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/robertocfiori" height="30" width="40" /></a>

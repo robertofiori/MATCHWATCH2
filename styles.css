@@ -43,16 +43,20 @@ a {
 }
 
 .container_flex {
-    display: flex;  
-    width: 280px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction:row;
-    padding-left: 50px;
-    padding-top: 10px ;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias líneas en pantallas pequeñas */
+    padding-left: 20px;
+}
 
-
+@media (max-width: 600px) {
+    .container_flex {
+        flex-direction: column; /* Cambia la dirección de los elementos en pantallas pequeñas */
+        align-items: center;
     }
+}
 
 .item_flex {
     display: flex;
@@ -126,6 +130,23 @@ header div ul li a:hover {
     z-index: 1;
 }
 /*el contenido textual de la sección esté visible y no quede detrás del video de fondo*/
+ 
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Mantiene una relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .cta {
     font-family: Nunito, 'Arial', sans-serif; 
@@ -259,6 +280,7 @@ footer {
     /*Define el color del texto en blanco claro*/
 }
 
+
 /*REFERENCIA - https://www.youtube.com/watch?v=OeyPXzQfJrI*/
 .socials a {
     display: inline-block;
@@ -291,4 +313,18 @@ footer {
     body {
     font-size: 14px;
     } 
+}
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width: 600px) {
+    #contacto form {
+        width: 90%; /* Reduce el ancho en pantallas pequeñas */
+        padding: 0 10px;
+    }
 }
