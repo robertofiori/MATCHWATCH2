@@ -1,9 +1,11 @@
 /* Estilo General CSS del sitio */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@500&display=swap');
+
 body {
     margin: 0; 
     padding: 0;
     /*Elimina los márgenes y el espacio interno (padding) predeterminado del cuerpo de la página, para que todo comience desde los bordes.*/
-    font-family: 'Arial', sans-serif; 
+    font-family: Nunito, 'Arial', sans-serif; 
     /* Establece la fuente del texto en Arial, o una fuente genérica "sans-serif" si Arial no está disponible*/
     background-color: #1a1a1a; 
     /*  Aplica un color de fondo oscuro (gris oscuro) */
@@ -21,6 +23,7 @@ body {
 
 /* Header */
 header {
+    font-family: Nunito, 'Arial', sans-serif; 
     background-color: #0e0e0e;
     /*Aplica un fondo negro al encabezado*/
     padding: 20px;
@@ -33,8 +36,31 @@ header {
     /*Alinea los elementos verticalmente en el centro*/
 }
 
+a {
+    text-decoration: none;
+    font-family: Nunito, 'Arial', sans-serif;
+    color: #f1f1f1;
+}
+
+.container_flex {
+    display: flex;  
+    width: 280px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:row;
+    padding-left: 50px;
+    padding-top: 10px ;
+
+
+    }
+
+.item_flex {
+    display: flex;
+    width: 1 px;
+}
 
 header ul {
+    font-family: Nunito, 'Arial', sans-serif; 
     list-style: none;
     /*Elimina los puntos predeterminados de la lista ul*/
     display: flex;
@@ -43,7 +69,9 @@ header ul {
     /*Añade 20 píxeles de espacio entre los elementos de la lista ul*/
 }
 
-header ul li a {
+header div ul li a {
+    font-family: Nunito, 'Arial', sans-serif; 
+    display: flex ;
     color: #f1f1f1;
     /*Los links del menú son de color gris claro*/
     text-decoration: none;
@@ -54,12 +82,14 @@ header ul li a {
     /*Animacion de cambio de color, 0.3seg para  suave cuando el mouse pasa sobre el link*/
 }
 
-header ul li a:hover {
+
+header div ul li a:hover {
     color: #32cd32; /* Hover verde césped */
 }
 
 /* Hero (Sección principal con video) */
 .hero {
+    font-family: Nunito, 'Arial', sans-serif; 
     position: relative;
     /*Posiciona los elementos hijos de la sección de forma relativa a este contenedor.*/
     height: 100vh;
@@ -98,6 +128,7 @@ header ul li a:hover {
 /*el contenido textual de la sección esté visible y no quede detrás del video de fondo*/
 
 .cta {
+    font-family: Nunito, 'Arial', sans-serif; 
     display: inline-block;
     /* El botón se comporta como un bloque pero en línea*/
     background-color: #32cd32;
@@ -127,6 +158,7 @@ header ul li a:hover {
 
 /* Sección de características */
 #caracteristicas {
+    align-items: center;
     /*Aplica los estilos a la sección de la página con el ID #caracteristicas*/
     padding: 50px;
     /*Añade un espacio interno de 50 píxeles alrededor del contenido de la sección.*/
@@ -153,6 +185,7 @@ header ul li a:hover {
 
 /* Formulario de contacto */
 #contacto {
+    text-align: center;
     /*Aplica estilos a la sección con el ID #contacto */
     padding: 50px;
     /*Añade un relleno interno de 50 píxeles alrededor del contenido en esta sección*/
@@ -214,6 +247,7 @@ header ul li a:hover {
 
 /* Footer/Pie de pagina */  
 footer {
+    font-family: Nunito, 'Arial', sans-serif; 
     /*Aplica estilos al pie de página*/
     background-color: #0e0e0e;
     /*Define un color de fondo negro oscuro*/
@@ -242,3 +276,19 @@ footer {
  .socials a:hover {
     background-color: #f1f1f1;
  }   
+
+.item_flex a:hover {
+    color: #32cd32; /* Hover verde césped */;
+ }  
+
+ @media only screen and (max-width: 600px) {
+    body {
+    font-size: 14px;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+    font-size: 14px;
+    } 
+}
