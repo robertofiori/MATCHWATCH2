@@ -1,0 +1,42 @@
+.video-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+    padding: 50px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Hace que ocupe toda la altura de la ventana */
+    text-align: center;
+}
+
+
+.video-gallery h2 {
+    color: #f1f1f1;
+    font-size: 2rem;
+    margin: 0 0 20px 0; /* Espacio inferior para separar el título de los videos */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo del grid para que esté centrado */
+    padding: 0 20px;
+}
+
+/* Ajustes responsive para el título en pantallas pequeñas */
+@media (max-width: 600px) {
+    .video-gallery h2 {
+        font-size: 1.5rem;
+    }
+}
+
